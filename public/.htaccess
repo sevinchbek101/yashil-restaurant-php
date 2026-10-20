@@ -1,0 +1,15 @@
+RewriteEngine On
+
+RewriteRule ^menu/?$ menu.php [L,QSA]
+RewriteRule ^track/?$ track.php [L,QSA]
+RewriteRule ^admin/?$ admin/index.php [L,QSA]
+RewriteRule ^admin/login/?$ admin/login.php [L,QSA]
+RewriteRule ^admin/logout/?$ admin/logout.php [L,QSA]
+RewriteRule ^api/data/?$ api/data.php [L,QSA]
+RewriteRule ^api/admin-auth/?$ api/admin-auth.php [L,QSA]
+RewriteRule ^api/checkout/webhook/?$ api/checkout-webhook.php [L,QSA]
+
+Options -Indexes
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>

@@ -1,0 +1,10 @@
+<?php
+require_once dirname(__DIR__) . '/app/bootstrap.php';
+require_once dirname(__DIR__) . '/app/view.php';
+render_head('YASHIL — Sog‘lom taomlar');
+?><main id="main-content" data-page="home"><?php render_header('home'); ?>
+<section class="hero"><img class="heroMedia" src="/assets/images/yashil-hero.webp" alt="" width="1600" height="1067" fetchpriority="high"><div class="heroCard"><span class="eyebrow" data-i18n="home.eye">YANGI MAVSUM TA’MI</span><h1 data-i18n-html="home.hero">Yengil ye.<br>Yorqin yasha.</h1><p data-i18n="home.heroText">Mahalliy mahsulotlar, kuchli ta’m va har kuni yangi tayyorlanadigan foydali taomlar.</p><a class="pill" href="/menu" data-i18n="home.see">MENYUNI KO‘RISH</a></div></section>
+<section class="section shell"><div class="sectionTop"><div><span class="eyebrow" data-i18n="home.popular">ENG KO‘P TANLANGAN</span><h2 data-i18n-html="home.popularTitle">Mashhur<br>taomlar.</h2></div><div class="homeMenuIntro"><p data-i18n="home.sample">Bosh sahifada sevimli taomlardan namuna. To‘liq tanlov menyuda.</p><a class="outline" href="/menu" data-i18n="home.all">BARCHA MENYU →</a></div></div><div class="menuGrid" id="home-products" aria-live="polite"></div></section>
+<section class="feature" id="about"><div class="shell split"><div><span class="eyebrow">BIZNING YONDASHUV</span><h2>Oddiy mahsulot.<br>Ajoyib natija.</h2><p>Biz qisqa tarkib, mavsumiy sabzavot va aniq ta’m uyg‘unligiga ishonamiz.</p><div class="facts"><div><b>Har kuni yangi</b><small>Ertalabdan tayyorlanadi</small></div><div><b>Mahalliy</b><small>Ishonchli yetkazib beruvchilar</small></div><div><b>Muvozanatli</b><small>Oqsil, ko‘kat va donlar</small></div><div><b>Siz uchun</b><small>Tarkibni o‘zgartirish mumkin</small></div></div></div><img src="/assets/images/yashil-approach.webp" width="1000" height="667" loading="lazy" alt="Yangi sabzavotlardan tayyorlangan foydali taom"></div></section>
+<section class="dark"><span class="eyebrow">BUGUN NIMANI TANLAYSIZ?</span><h2>Bir bowl — kuningizga yaxshi boshlanish.</h2><a class="pill" href="/menu">BUYURTMA BERISH</a></section>
+<?php render_cart(); render_footer(); ?>
